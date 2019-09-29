@@ -17,7 +17,8 @@
 - in the terminal, run `export FLASK_APP=platform.py` to set the `FLASK_APP` environment variable and tell flask how to import platform.py
 - to initialise the server and run the application, `flask run`
 - click the URL to open the browser and you should see your message printed
--
+- install python-dotenv, to register environment variables that i'd like to be automatically imported when i run the flask command `pip install python-dotenv` then `FLASK_APP=platform.py
+`
 
 #### Project structure
 ```
