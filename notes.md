@@ -1,5 +1,7 @@
 # Notes
 
+- to start server run, `flask run`
+
 #### check python 3 is installed
 - run, `python3`
 - to exit interactive interpreter run, `exit()`
@@ -19,6 +21,10 @@
 - click the URL to open the browser and you should see your message printed
 - install python-dotenv, to register environment variables that i'd like to be automatically imported when i run the flask command `pip install python-dotenv` then `FLASK_APP=platform.py
 `
+- make templates dir and `index.html` with `{{ }}` placeholders which represent the parts of the page that are a variable which will only be known at runtime
+- in routes.py create mock object for user
+- add `render_template('index.html', title='Home', user=user)`
+
 
 #### Project structure
 ```
