@@ -21,11 +21,11 @@
 - click the URL to open the browser and you should see your message printed
 - install python-dotenv, to register environment variables that i'd like to be automatically imported when i run the flask command `pip install python-dotenv` then `FLASK_APP=platform.py
 `
-- make templates dir and `index.html` with `{{ }}` placeholders which represent the parts of the page that are a variable which will only be known at runtime
+- make templates dir and `index.html` with `{{ }}` placeholders blocks which represent the parts of the page that are a variable which will only be known at runtime
 - in routes.py create mock object for user
-- add `render_template('index.html', title='Home', user=user)`
-
-
+- add `render_template('index.html', title='Home', user=user)`, `render_template()` is a function which invokes the Jinja2 template engine that comes with Flask
+- add conditional statement for title in index.html using `{%  %}`, so if the view function forgets to pass a value for the title then the template will provide a default one
+- add nav template in `base.html`
 #### Project structure
 ```
 platform/

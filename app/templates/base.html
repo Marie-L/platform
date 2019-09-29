@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{ title }} - Platform </title>
+    {% else %}
+    <title> Welcome to Platform</title>
+    {% endif %}
+</head>
+<body>
+<div>
+    Platform: <a href="/index">Home</a>
+</div>
+<hr>
+<!-- NAV -- use block control statement to define the location for derived templates to insert themselves-->
+{% block content %}{% endblock %}
+</body>
+</html>
