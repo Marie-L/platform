@@ -1,6 +1,6 @@
 # Notes
 
-- to start server run, `flask run`
+- to start server run, `flask run` in root dir
 
 #### check python 3 is installed
 - run, `python3`
@@ -26,6 +26,8 @@
 - add `render_template('index.html', title='Home', user=user)`, `render_template()` is a function which invokes the Jinja2 template engine that comes with Flask
 - add conditional statement for title in index.html using `{%  %}`, so if the view function forgets to pass a value for the title then the template will provide a default one
 - add nav template in `base.html`
+- to handle web form application in the Flask-WTF, run `pip install flask-wtf`
+
 #### Project structure
 ```
 platform/
